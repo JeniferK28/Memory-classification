@@ -43,7 +43,6 @@ mrk_cross.orig=mrk;
 %% Epoch Cross 
 %epo=proc_segmentation(cnt,mrk_cross, disp_cross); %Cross Epoch
 
-
 %% Epoch  Stimulus
 epo=proc_segmentation(cnt,mrk_cross, disp_stimulus); %Stimulus Epoch
 
@@ -52,46 +51,12 @@ epo.y(2,:)=~label';
 epo=rmfield(epo,'className');
 epo.className={'Remember','Forgotten'};
 
-
 %% Reselect trials
 %for s=1:5
 %rng(s)
  r_n=sum(epo.y(1,:));
  f_n=250-r_n;
-% id_cont=1;
-%     for i=1:250
-%     if  epo.y(1,i)==1
-%         id_r(id_cont)=i;
-%         id_cont=id_cont+1;
-%     end 
-%     end
-%   id_cont=1;
-%     for i=1:250
-%     if  epo.y(2,i)==1
-%         id_f(id_cont)=i;
-%         id_cont=id_cont+1;
-%     end 
-%     end
-% 
-%     if r_n>f_n
-%         rand_r=randi([1 r_n],1,f_n);
-%         for j=1:f_n
-%         new_r(j)=id_r(rand_r(j));
-%         end
-%         new_id(1,:)=[new_r id_f];
-%        new_id(2,:)=[ones(1,f_n) zeros(1,f_n)];
-%        [temp, order] = sort(new_id(1,:));
-%        id = new_id(:,order);
-%     else 
-%     end 
-%     new_epo=epo;
-%     for k=1:size(id,2)
-%     new_epo_x(:,:,k)=epo.x(:,:,id(1,k));
-%     new_epo_y(k)=epo.y(1,id(1,k));
-%     end
-%     new_epo.x=new_epo_x;
-%     new_epo.y=new_epo_y;
-%     new_epo.y(2,:)=not(new_epo_y);
+
     
 new_epo=epo;  
 %% Classification_CSP
