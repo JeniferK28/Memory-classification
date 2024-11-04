@@ -17,10 +17,10 @@ Python 3
 * Memory task Paradigm
 <img src="Memory task.jpg" width=80% height=80%>
 * Memory task results
-<img src="Memory task results.JPG" width=50% height=50%>
+<img src="Memory task results.JPG" width=40% height=40%>
 
 * Difference between conditions of EEG signals during pre on-going stimulus 
-<img src="ttest_1.jpg" width=80% height=80%>
+<img src="ttest_1.jpg" width=40% height=40%>
 
 * ERP at Cz over all subjects for a) encoding  and b)decoding task. dGFP was calculated for all channels for c) encoding and d) decoding task
-<img src="erp_results.JPG" width=70% height=70%>
+<img src="erp_results.JPG" width=60% height=60%>
